@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/scripts.js" defer></script>
+    <script src="./js/Entidades.js" defer></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Tienda de mascotas</title>
+</head>
+<!-- ID-TITULO-TRANSACCION-DESCRIPCION-PRECIO-ANIMAL-RAZA-FECHANAC-VACUNA -->
+
+<body>
+    <header id="head">
+        <div>
+            <a href="./"><img src="./img/perro.svg" class="icon" alt="logo empresa"></a>
+
+            <nav>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="./anuncios.html">Anuncios</a>
+                <a href="./blog.html">Blog</a>
+                <a href="./contacto.html">Contacto</a>
+                <br>
+
+            </nav>
+
+        </div>
+
+
+    </header>
+    <br>
+    <h1 id="h1">Administracion</h1>
+    <br>
+    <img src="./img/veterinaria.jpg" alt="Imagen Principal" id="imgPpal">
+    <form action="#">
+        <fieldset>
+            <legend>Informacion de Anuncio</legend>
+            <div>
+                <label id="lblId" for="idAnuncio" hidden>Id</label>
+                <input type="text" id="idAnuncio" name="idAnuncio" hidden disabled>
+            </div>
+            <div>
+                <label for="txtTitulo">Titulo</label>
+                <input placeholder="Titulo" type="text" id="txtTitulo" name="titulo" required></input>
+            </div>
+            <div>
+                <label for="txtTransaccion" hidden>Transaccion</label>
+                <input placeholder="Titulo" type="text" id="txtTransaccion" name="transaccion" hidden></input>
+            </div>
+            <div>
+                <label for="txtDescripcion">Descripcion</label>
+                <input placeholder="Descripcion" type="text" id="txtDescripcion" name="descripcion" required></input>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Animal</legend>
+                    <label for="perro">Perro</label>
+                    <input type="radio" name="animal" value="Perro" id="perro" required>
+                    <label for="gato">Gato</label>
+                    <input type="radio" name="animal" value="Gato" id="gato" required>
+                    </input>
+                </fieldset>
+            </div>
+            <div>
+                <label for="numPrecio">Precio</label>
+                <input placeholder="Precio" type="text" id="numPrecio" name="precio" required></input>
+            </div>
+            <div>
+                <label for="raza"><img src="./img/perro.svg" alt="perro" class="icon"></label>
+                <input placeholder="Raza..." type="text" id="raza" name="Raza" required></input>
+            </div>
+            <div>
+                <label for="fecha"><img src="./img/ciguena.svg" alt="imagen cigueña" class="icon"></label>
+                <input placeholder="ddd/mm/aaaa" type="date" id="fecha" name="Fecha" required></input>
+            </div>
+            <div>
+                <label for="vacuna"><img src="./img/vacuna1.svg" alt="imagen cigueña" class="icon"></label>
+                <input placeholder="Eliga una opcion..." type="" id="vacuna" name="Vacuna" required></input>
+            </div>
+
+
+            <input type="submit" id="btnCrearModificar" value="Guardar"></input>
+            <button type="button" id="btnBorrar">Borrar</button>
+        </fieldset>
+    </form>
+    <br>
+    <fieldset>
+        <div id="divTabla"></div>
+    </fieldset>
+    <footer>
+        <nav>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./anuncios.html">Anuncios</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contacto.html">Contacto</a>
+            <br>
+
+        </nav>
+        <p>Todos los derechos reservados ©</p>
+    </footer>
+
+</body>
+</body>
+
+</html>
