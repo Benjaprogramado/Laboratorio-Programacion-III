@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/scripts.js" defer></script>
+    <script src="./js/Entidades.js" defer></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./img/LogoFinal2.png" />
+    <title>Veterinaria Patitas</title>
+</head>
+<!-- ID-TITULO-TRANSACCION-DESCRIPCION-PRECIO-ANIMAL-RAZA-FECHANAC-VACUNA -->
+
+<body>
+    <header>
+            <a href="./"><img src="./img/LogoFinal2.png" alt="logo empresa" id="logo"></a>
+            <nav>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="./anuncios.html">Anuncios</a>
+                <a href="./blog.html">Blog</a>
+                <a href="./contacto.html">Contacto</a>
+            </nav>
+    </header>
+
+    <div class="miSeccion">
+
+    <h1>Administracion</h1>
+
+    <img src="./img/Imagenppal2.jpg" alt="Imagen Principal" id="imgPpal">
+
+    <form action="#" id="form">
+        <fieldset>
+            <legend>Informacion de Anuncio</legend>
+
+            <div id="tresPrimeros"></div>
+
+            <div>
+                <label id="lblId" for="idAnuncio" hidden>Id</label>
+                <input type="text" id="idAnuncio" name="idAnuncio" hidden disabled>
+            </div>
+
+            <div>
+                <label for="txtTitulo">Titulo</label>
+                <input placeholder="Titulo" type="text" id="txtTitulo" name="titulo" required></input>
+            </div>
+
+            <div>
+                <label for="txtDescripcion">Descripcion</label>
+                <input placeholder="Descripcion" type="text" id="txtDescripcion" name="descripcion" required></input>
+            </div>
+
+            <div>
+                <label for="numPrecio">Precio</label>
+                <input placeholder="Precio" type="text" id="numPrecio" name="precio" required></input>
+            </div>
+
+            <div>
+                <fieldset id="perroGato">
+                    <legend>Animal</legend>
+                    <div>
+                        <label for="perro">Perro</label>
+                        <input type="radio" name="animal" value="Perro" id="perro" required>
+                        <label for="gato">Gato</label>
+                        <input type="radio" name="animal" value="Gato" id="gato" required>
+                    </div>
+
+                    </input>
+                </fieldset>
+            </div>
+
+            <div id="tresUltimos">
+
+            <div class="divs">
+                <label for="raza"><img src="./img/perro.svg" alt="perro" class="icon"></label>
+                <input placeholder="Raza..." type="text" id="raza" name="Raza" required></input>
+            </div>
+
+            <div class="divs">
+                <label for="fecha"><img src="./img/ave2.png" alt="imagen cigueña" class="icon"></label>
+                <input placeholder="ddd/mm/aaaa" type="date" id="fecha" name="Fecha" required></input>
+            </div>
+            
+            <div class="divs">
+                <label for="vacuna"><img src="./img/vacuna1.svg" alt="imagen cigueña" class="icon"></label>
+                <br>
+                <select id="vacuna" name="Vacuna" required>
+                    <option value="Si">Si</option> 
+                    <option value="No">No</option>
+                    <option value="nada" selected>--Elegir--</option>
+                </select>
+            </div>
+
+            </div>
+            <div>
+                <label for="txtTransaccion" hidden>Transaccion</label>
+                <input placeholder="Transaccion" type="text" id="txtTransaccion" name="transaccion"hidden></input>
+            </div>
+
+            <br>
+            <button type="submit" id="btnCrearModificar" value="Guardar"><img src="./img/Guardar.png" alt="" class="icon"> Guardar</input>
+            <button type="button" id="btnBorrar" hidden><img src="./img/Eliminar.png" alt="Imagen Eliminar" class="icon"> Eliminar</button>
+        </fieldset>
+    </form>
+    <br>
+
+    <fieldset>
+        <div id="divTabla"></div>
+    </fieldset>
+
+</div>
+    <br>
+
+    <footer>
+        <nav>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./anuncios.html">Anuncios</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+        <p>Todos los derechos reservados ©</p>    
+    </footer>
+
+</body>
+
+</html>

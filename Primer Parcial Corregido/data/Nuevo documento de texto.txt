@@ -1,0 +1,1 @@
+[{"id":"4","titulo":"Perro","transaccion":"Gato","descripcion":"bueno","precio":"33","raza":"alguna","fechaNac":"2025-03-01","vacuna":"si","active":"true"}]
